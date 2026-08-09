@@ -1,0 +1,47 @@
+CAST
+
+@FATHER_WET — adult male cat, short orange tabby fur with white stripes, amber eyes, rounded muzzle. Soaked grey coat, loose ochre scarf, flat cap. Fur wet and clumped, ears back, expression tired.
+
+@FATHER_HOME — the same animal, identical face and markings, coat, scarf and cap removed, in a grey knithed. Head fur still damp, expression warm.
+
+@MOTHER — adult female cat, slightly shorter, soft cream-and-white fur with faint ginger patches, brown eyes. Oatmeal knit cardigan over a pinkish silk shirt.
+
+@KITTEN — small cat, waist-height to the adults, fluffy grey-and-white fur matching the stripes of @FATHER_WET, oversized round amber eyes. rainbow hoodie and blue jeans.
+
+SETS
+
+@KITCHEN — matte graphite-grey handleless upper cabinets to the ceiling, matching lower cabinets with slim brushed-brass bar handles, warm oak worktop and matching full-height oak backsplash, a warm yellow LED strip glowing beneath the upper cabinets across the whole backsplash, matte black gooseneck tap, black sink and glass hob.
+
+@STUDIO — compact open-plan studio holding @KITCHEN along the far wall, a tall light-grey wardrobe unit at the left. Three depth layers: grey fabric sofa with mustard-yellow velvet cushions in the centre foreground; oak dining table on thin black steel legs with two mustard-yellow velvet chairs directly behind the sofa; @KITCHEN behind. Light oak floor, warm white walls, black ceiling tracks, three brushed-brass cylinder pendants.
+
+@BRAND_CARD — static frame, warm off-white background: large black Cyrillic wordmark "ФДМ" above centre, a smaller line "Фавор Донецк Мебель" beneath it, a thin mustard-yellow rule, and one line of dark graphite text: "Кухня ФДМ — то, ради чего спешишь домой." Nothing else.
+
+SEQUENCE
+
+Shot 1, 0.0–1.8s. Night, heavy rain. @FATHER_WET walks alone along a wet pavement, shoulders slumped, head down. Camera dollies laterally at his walking pace, holding him at a constant frame position. A streetlamp behind backlights the rain into bright vertical streaks, puddles fracturing underfoot. Wide, eye-level, 35mm, deep focus, constant speed.
+
+Shot 2, 1.8–5.0s. Signature shot. @FATHER_WET is already standing with his back to camera in the rain, a few steps short of the apartment door, shoulders slumped, motionless. He then walks forward to the door and pushes it open himself. A widening wedge of warm yellow light from inside the apartment spreads up his back and across his profile; water droplets in the wet fur ignite into gold specular points as the light crosses them. Two colour temperatures in one frame: cold blue rain behind, warm yellow ahead, the divide travelling with the door. Camera pushes steadily from 2.5m to 1.2m across the whole shot. Medium from behind, eye-level, 50mm.
+Beats — 1.8–2.5s he stands still, back to camera, rain only; 2.5–3.4s he walks to the door; 3.4–4.0s the door opens and the warm wedge begins to widen; 4.0–5.0s the light finishes crossing him and the droplets catch gold.
+
+Shot 3, 5.0–7.0s. Camera enters @STUDIO from the dark threshold and pushes forward, revealing depth layer by layer: wardrobe, sofa, table, @KITCHEN. @MOTHER at the worktop, @KITTEN by the table. Bloom builds on the LED strip and pendants. Wide, eye-level, 24mm, deep focus.
+
+Shot 4, 7.0–8.4s. @KITTEN runs across the oak floor toward camera, arms reaching up, mouth open in a joyful shout, eyes into the lens. Camera retreats ahead of him at his running speed, holding constant size, decelerating slightly at the end. Close-up, high angle from adult eye height, 50mm.
+
+Shot 5, 8.4–9.7s. In @STUDIO, @MOTHER leans over the oak table and sets down a white plate of pasta. Across the table @FATHER_HOME stands beside a mustard-yellow chair, @KITTEN close at his side looking up at him. The three are spread apart. Camera pulls back 40cm. Wide from the sofa side, eye-level, 28mm, deep focus.
+
+Shot 6, 9.7–11.3s. Second signature shot. @FATHER_HOME, @KITTEN and @MOTHER stand side by side facing camera, symmetrical, @KITTEN exactly in the middle holding a paw of each. Camera rises 30cm while pulling back, opening @KITCHEN around them in soft defocus. Medium group, eye-level, 35mm.
+
+Shot 7, 11.3–12.3s. Extreme close-up on @KITCHEN. Camera travels laterally 40cm along the worktop. The LED strip washes down the oak backsplash, the brass handle and matte graphite front pass through foreground, the black tap catching a hard highlight. Macro, grazing warm light, focus on the handle.
+
+Shot 8, 12.3–13.4s. Wide on @STUDIO, wider than shot 3. The soaked charcoal-grey overcoat of @FATHER_WET drapes over the sofa arm, still dripping; the family stands by the table in depth. Camera pushes slowly toward the LED strip, which over-exposes and blooms until the frame washes to white. 24mm, deep focus.
+
+Shot 9, 13.4–15.0s. @BRAND_CARD. The white blow-out ending shot 8 resolves into the card over 0.25s — no cut, only a settle. Completely static, held unchanged to the final frame, no fade to black.
+
+CONSISTENCY
+ @FATHER_WET and @FATHER_HOME are the same animal in two wardrobe states — same face, fur pattern, eye colour, proportions; only clothing and head-fur wetness differ. @MOTHER and @KITTEN must not drift in fur, eyes or garments. Hold @KITCHEN identical in shots 3, 5, 7, 8 — same cabinet colour, brass handles, oak grain, black tap, and above all the same warm yellow LED strip, lit in every interior shot.
+
+Every camera move slow and steady. No whip pans, speed ramps, camera shake, handheld jitter or lens flares beyond the practical bloom. The only speed change is the deceleration ending shot 4.
+
+The arc runs cold to warm, separation to togetherness. Everything before the door opens — through roughly 3.4s — must feel genuinely uncomfortable: dark, wet, still, desaturated; everything after the door opens reads as relief through light and space.
+
+No text, captions, watermarks or graphics in shots 1–8. @BRAND_CARD is the only graphic in the film.
