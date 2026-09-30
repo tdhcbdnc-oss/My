@@ -15,17 +15,17 @@
   "Ethereum": {
    "inputs": {
     "mcap": {
-     "value": 327258.690254,
+     "value": 327944.680337,
      "source": "CoinGecko",
      "note": ""
     },
     "fdv": {
-     "value": 327258.690254,
+     "value": 327944.680337,
      "source": "CoinGecko",
      "note": ""
     },
     "tvl_now": {
-     "value": 53918.369868,
+     "value": 53303.04256,
      "source": "DeFiLlama",
      "note": "на 2026-09-30"
     },
@@ -39,6 +39,11 @@
      "source": "DeFiLlama",
      "note": "комиссии за 365 дн (Ethereum)"
     },
+    "devs": {
+     "value": 3270,
+     "source": "Open Dev Data",
+     "note": "exclusive_devs за 28 дн до 2026-09-22. Source: Open Dev Data (opendevdata.org), CC BY 4.0"
+    },
     "addr_now": {
      "value": 495105,
      "source": "Artemis",
@@ -50,14 +55,14 @@
      "note": "медиана за 7 дн до 2026-04-01"
     }
    },
-   "score": 64.88538474319562,
-   "rank": 5,
+   "score": 71.49792475334185,
+   "rank": 1,
    "derived": {
-    "tvl_growth": 0.0001639477426436109,
+    "tvl_growth": -0.011250124882878909,
     "addr_growth": -0.19662850244367858,
-    "mcap_tvl": 6.069521223567715,
-    "mcap_rev": 1614.57779965487,
-    "devs": null,
+    "mcap_tvl": 6.152457056608965,
+    "mcap_rev": 1617.96223035688,
+    "devs": 3270,
     "unlock_6m": null,
     "fdv_mcap": 1.0,
     "investors": null
@@ -66,17 +71,17 @@
   "Solana": {
    "inputs": {
     "mcap": {
-     "value": 69988.261697,
+     "value": 70355.204557,
      "source": "CoinGecko",
      "note": ""
     },
     "fdv": {
-     "value": 75581.369252,
+     "value": 75977.633946,
      "source": "CoinGecko",
      "note": ""
     },
     "tvl_now": {
-     "value": 6471.36886,
+     "value": 6568.178533,
      "source": "DeFiLlama",
      "note": "на 2026-09-30"
     },
@@ -90,6 +95,11 @@
      "source": "DeFiLlama",
      "note": "комиссии за 365 дн (Solana)"
     },
+    "devs": {
+     "value": 1080,
+     "source": "Open Dev Data",
+     "note": "exclusive_devs за 28 дн до 2026-09-22. Source: Open Dev Data (opendevdata.org), CC BY 4.0"
+    },
     "addr_now": {
      "value": 5123259,
      "source": "Artemis",
@@ -101,33 +111,33 @@
      "note": "медиана за 7 дн до 2026-04-01"
     }
    },
-   "score": 75.68553445351621,
+   "score": 67.83795618769393,
    "rank": 3,
    "derived": {
-    "tvl_growth": 0.017868078414195354,
+    "tvl_growth": 0.03309506948211238,
     "addr_growth": 0.19440715591599145,
-    "mcap_tvl": 10.815062965982749,
-    "mcap_rev": 292.315963493503,
-    "devs": null,
+    "mcap_tvl": 10.711524390440927,
+    "mcap_rev": 293.84855271728367,
+    "devs": 1080,
     "unlock_6m": null,
-    "fdv_mcap": 1.0799149374392842,
+    "fdv_mcap": 1.0799149035867681,
     "investors": null
    }
   },
   "Sui": {
    "inputs": {
     "mcap": {
-     "value": 4767.521283,
+     "value": 4865.721245,
      "source": "CoinGecko",
      "note": ""
     },
     "fdv": {
-     "value": 11637.930067,
+     "value": 11877.644633,
      "source": "CoinGecko",
      "note": ""
     },
     "tvl_now": {
-     "value": 559.329125,
+     "value": 551.750347,
      "source": "DeFiLlama",
      "note": "на 2026-09-30"
     },
@@ -141,6 +151,11 @@
      "source": "DeFiLlama",
      "note": "комиссии за 365 дн (Sui)"
     },
+    "devs": {
+     "value": 254,
+     "source": "Open Dev Data",
+     "note": "exclusive_devs за 28 дн до 2026-09-22. Source: Open Dev Data (opendevdata.org), CC BY 4.0"
+    },
     "addr_now": {
      "value": 134536,
      "source": "Artemis",
@@ -152,33 +167,33 @@
      "note": "медиана за 7 дн до 2026-04-01"
     }
    },
-   "score": 58.94531421813021,
+   "score": 49.216625038782276,
    "rank": 6,
    "derived": {
-    "tvl_growth": -0.01995944469388644,
+    "tvl_growth": -0.03323876355585653,
     "addr_growth": -0.41288087071124957,
-    "mcap_tvl": 8.523642109643406,
-    "mcap_rev": 1357.4691600328697,
-    "devs": null,
+    "mcap_tvl": 8.81870083354927,
+    "mcap_rev": 1385.429899381162,
+    "devs": 254,
     "unlock_6m": null,
-    "fdv_mcap": 2.441086127606491,
+    "fdv_mcap": 2.4410861278182407,
     "investors": null
    }
   },
   "Aptos": {
    "inputs": {
     "mcap": {
-     "value": 687.919105,
+     "value": 690.49137,
      "source": "CoinGecko",
      "note": ""
     },
     "fdv": {
-     "value": 955.210046,
+     "value": 958.785327,
      "source": "CoinGecko",
      "note": ""
     },
     "tvl_now": {
-     "value": 55.740282,
+     "value": 55.53995,
      "source": "DeFiLlama",
      "note": "на 2026-09-30"
     },
@@ -192,6 +207,11 @@
      "source": "DeFiLlama",
      "note": "комиссии за 365 дн (Aptos)"
     },
+    "devs": {
+     "value": 92,
+     "source": "Open Dev Data",
+     "note": "exclusive_devs за 28 дн до 2026-09-22. Source: Open Dev Data (opendevdata.org), CC BY 4.0"
+    },
     "addr_now": {
      "value": 35921,
      "source": "Artemis",
@@ -203,33 +223,33 @@
      "note": "медиана за 7 дн до 2026-04-01"
     }
    },
-   "score": 48.316215757430236,
+   "score": 39.8152839809142,
    "rank": 9,
    "derived": {
-    "tvl_growth": -0.804932139562796,
+    "tvl_growth": -0.8056332184453374,
     "addr_growth": -0.96596240238863,
-    "mcap_tvl": 12.34150743980807,
-    "mcap_rev": 600.7366045308551,
-    "devs": null,
+    "mcap_tvl": 12.432336903436175,
+    "mcap_rev": 602.9828769934487,
+    "devs": 92,
     "unlock_6m": null,
-    "fdv_mcap": 1.3885499603910552,
+    "fdv_mcap": 1.3885551198127213,
     "investors": null
    }
   },
   "Avalanche": {
    "inputs": {
     "mcap": {
-     "value": 4829.34046,
+     "value": 4879.641119,
      "source": "CoinGecko",
      "note": ""
     },
     "fdv": {
-     "value": 5120.001442,
+     "value": 5173.313795,
      "source": "CoinGecko",
      "note": ""
     },
     "tvl_now": {
-     "value": 640.767554,
+     "value": 626.279733,
      "source": "DeFiLlama",
      "note": "на 2026-09-30"
     },
@@ -243,6 +263,11 @@
      "source": "DeFiLlama",
      "note": "комиссии за 365 дн (Avalanche)"
     },
+    "devs": {
+     "value": 108,
+     "source": "Open Dev Data",
+     "note": "exclusive_devs за 28 дн до 2026-09-22. Source: Open Dev Data (opendevdata.org), CC BY 4.0"
+    },
     "addr_now": {
      "value": 21091,
      "source": "Artemis",
@@ -254,33 +279,33 @@
      "note": "медиана за 7 дн до 2026-04-01. ⚠ ступенька в данных около 2026-07-11: медиана 502,037 → 22,052 за неделю — возможна смена методики источника, проверь вручную"
     }
    },
-   "score": 53.15612713836158,
+   "score": 43.674630377340705,
    "rank": 8,
    "derived": {
-    "tvl_growth": -0.11533071222703406,
+    "tvl_growth": -0.13533317677980738,
     "addr_growth": -0.9672310204512862,
-    "mcap_tvl": 7.536805554296215,
-    "mcap_rev": 1184.6592560157878,
-    "devs": null,
+    "mcap_tvl": 7.791472183884322,
+    "mcap_rev": 1196.9982372414029,
+    "devs": 108,
     "unlock_6m": null,
-    "fdv_mcap": 1.0601864756497204,
+    "fdv_mcap": 1.0601832529971351,
     "investors": null
    }
   },
   "Near": {
    "inputs": {
     "mcap": {
-     "value": 6908.777867,
+     "value": 7048.836656,
      "source": "CoinGecko",
      "note": ""
     },
     "fdv": {
-     "value": 6908.778987,
+     "value": 7048.837611,
      "source": "CoinGecko",
      "note": ""
     },
     "tvl_now": {
-     "value": 239.929727,
+     "value": 236.616937,
      "source": "DeFiLlama",
      "note": "на 2026-09-30"
     },
@@ -294,6 +319,11 @@
      "source": "DeFiLlama",
      "note": "комиссии за 365 дн (Near)"
     },
+    "devs": {
+     "value": 150,
+     "source": "Open Dev Data",
+     "note": "exclusive_devs за 28 дн до 2026-09-22. Source: Open Dev Data (opendevdata.org), CC BY 4.0"
+    },
     "addr_now": {
      "value": 76790,
      "source": "Artemis",
@@ -305,33 +335,33 @@
      "note": "медиана за 7 дн до 2026-04-01. ⚠ ступенька в данных около 2026-03-30: медиана 3,067,142 → 472,650 за неделю — возможна смена методики источника, проверь вручную"
     }
    },
-   "score": 44.21413161004037,
+   "score": 36.44514582535415,
    "rank": 10,
    "derived": {
-    "tvl_growth": 1.5197649387348173,
+    "tvl_growth": 1.484973701334746,
     "addr_growth": -0.9749636632408933,
-    "mcap_tvl": 28.795005743494215,
-    "mcap_rev": 5474.862186576052,
-    "devs": null,
+    "mcap_tvl": 29.790076506653453,
+    "mcap_rev": 5585.851797554341,
+    "devs": 150,
     "unlock_6m": null,
-    "fdv_mcap": 1.0000001621126082,
+    "fdv_mcap": 1.0000001354833494,
     "investors": null
    }
   },
   "TON": {
    "inputs": {
     "mcap": {
-     "value": 4228.799095,
+     "value": 4238.049641,
      "source": "CoinGecko",
      "note": ""
     },
     "fdv": {
-     "value": 7895.284465,
+     "value": 7912.528129,
      "source": "CoinGecko",
      "note": ""
     },
     "tvl_now": {
-     "value": 55.149255,
+     "value": 54.352401,
      "source": "DeFiLlama",
      "note": "на 2026-09-30"
     },
@@ -345,6 +375,11 @@
      "source": "DeFiLlama",
      "note": "комиссии за 365 дн (TON)"
     },
+    "devs": {
+     "value": 191,
+     "source": "Open Dev Data",
+     "note": "exclusive_devs за 28 дн до 2026-09-22. Source: Open Dev Data (opendevdata.org), CC BY 4.0"
+    },
     "addr_now": {
      "value": 103801,
      "source": "Artemis",
@@ -356,33 +391,33 @@
      "note": "медиана за 7 дн до 2026-04-01"
     }
    },
-   "score": 58.03211427721641,
+   "score": 48.252696486915454,
    "rank": 7,
    "derived": {
-    "tvl_growth": -0.00046046499497298665,
+    "tvl_growth": -0.014902855497381351,
     "addr_growth": 0.4843770109682679,
-    "mcap_tvl": 76.67916991807053,
-    "mcap_rev": 1994.846407454825,
-    "devs": null,
+    "mcap_tvl": 77.97354970574344,
+    "mcap_rev": 1999.2101566045335,
+    "devs": 191,
     "unlock_6m": null,
-    "fdv_mcap": 1.8670275621121697,
+    "fdv_mcap": 1.8670211062305961,
     "investors": null
    }
   },
   "Tron": {
    "inputs": {
     "mcap": {
-     "value": 32174.288951,
+     "value": 32097.231712,
      "source": "CoinGecko",
      "note": ""
     },
     "fdv": {
-     "value": 32174.313939,
+     "value": 32097.240025,
      "source": "CoinGecko",
      "note": ""
     },
     "tvl_now": {
-     "value": 5678.20312,
+     "value": 5638.408003,
      "source": "DeFiLlama",
      "note": "на 2026-09-30"
     },
@@ -396,6 +431,11 @@
      "source": "DeFiLlama",
      "note": "комиссии за 365 дн (Tron)"
     },
+    "devs": {
+     "value": 70,
+     "source": "Open Dev Data",
+     "note": "exclusive_devs за 28 дн до 2026-09-22. Source: Open Dev Data (opendevdata.org), CC BY 4.0"
+    },
     "addr_now": {
      "value": 3390556,
      "source": "Artemis",
@@ -407,33 +447,33 @@
      "note": "медиана за 7 дн до 2026-04-01"
     }
    },
-   "score": 78.59673429227676,
-   "rank": 2,
+   "score": 64.2041984667666,
+   "rank": 4,
    "derived": {
-    "tvl_growth": 0.1835662011234629,
+    "tvl_growth": 0.17527129612348924,
     "addr_growth": 0.16252802553164925,
-    "mcap_tvl": 5.66628003103207,
-    "mcap_rev": 92.19745919621363,
-    "devs": null,
+    "mcap_tvl": 5.692605376361943,
+    "mcap_rev": 91.97664680594465,
+    "devs": 70,
     "unlock_6m": null,
-    "fdv_mcap": 1.00000077664498,
+    "fdv_mcap": 1.000000258994298,
     "investors": null
    }
   },
   "Hyperliquid": {
    "inputs": {
     "mcap": {
-     "value": 19075.239849,
+     "value": 19786.883821,
      "source": "CoinGecko",
      "note": ""
     },
     "fdv": {
-     "value": 81919.814663,
+     "value": 84976.014364,
      "source": "CoinGecko",
      "note": ""
     },
     "tvl_now": {
-     "value": 1190.593415,
+     "value": 1171.952848,
      "source": "DeFiLlama",
      "note": "на 2026-09-30"
     },
@@ -447,6 +487,11 @@
      "source": "DeFiLlama",
      "note": "комиссии за 365 дн (Hyperliquid)"
     },
+    "devs": {
+     "value": 4,
+     "source": "Open Dev Data",
+     "note": "exclusive_devs за 28 дн до 2026-09-22. Source: Open Dev Data (opendevdata.org), CC BY 4.0. ⚠ за 6 мес 24 → 4: скачок больше чем в 5 раз, часто это перепривязка общих репозиториев к сети, а не реальный приток разработчиков"
+    },
     "addr_now": {
      "value": 86570,
      "source": "Artemis",
@@ -458,33 +503,33 @@
      "note": "медиана за 7 дн до 2026-04-01"
     }
    },
-   "score": 69.0128654396689,
-   "rank": 4,
+   "score": 55.906014685053876,
+   "rank": 5,
    "derived": {
-    "tvl_growth": -0.28799566131602927,
+    "tvl_growth": -0.2991431818820903,
     "addr_growth": 0.3420873124147339,
-    "mcap_tvl": 16.02162384629013,
-    "mcap_rev": 20.948256014766645,
-    "devs": null,
+    "mcap_tvl": 16.883685939043854,
+    "mcap_rev": 21.72977699352398,
+    "devs": 4,
     "unlock_6m": null,
-    "fdv_mcap": 4.294562758396695,
+    "fdv_mcap": 4.294562758478128,
     "investors": null
    }
   },
   "Monad": {
    "inputs": {
     "mcap": {
-     "value": 328.245041,
+     "value": 331.544745,
      "source": "CoinGecko",
      "note": ""
     },
     "fdv": {
-     "value": 2794.774601,
+     "value": 2822.869252,
      "source": "CoinGecko",
      "note": ""
     },
     "tvl_now": {
-     "value": 1052.269901,
+     "value": 1052.427495,
      "source": "DeFiLlama",
      "note": "на 2026-09-30"
     },
@@ -498,6 +543,11 @@
      "source": "DeFiLlama",
      "note": "комиссии за 365 дн (Monad)"
     },
+    "devs": {
+     "value": 75,
+     "source": "Open Dev Data",
+     "note": "exclusive_devs за 28 дн до 2026-09-22. Source: Open Dev Data (opendevdata.org), CC BY 4.0"
+    },
     "addr_now": {
      "value": 19904,
      "source": "Artemis",
@@ -509,16 +559,16 @@
      "note": "медиана за 7 дн до 2026-04-01"
     }
    },
-   "score": 84.04334883841283,
-   "rank": 1,
+   "score": 68.69937973433206,
+   "rank": 2,
    "derived": {
-    "tvl_growth": 1.9916543137159084,
+    "tvl_growth": 1.9921023610937416,
     "addr_growth": 0.4854839913426374,
-    "mcap_tvl": 0.311939969667535,
-    "mcap_rev": 156.14105803635562,
-    "devs": null,
+    "mcap_tvl": 0.3150285854133828,
+    "mcap_rev": 157.71067588099135,
+    "devs": 75,
     "unlock_6m": null,
-    "fdv_mcap": 8.514293445182618,
+    "fdv_mcap": 8.514293453814206,
     "investors": null
    }
   }

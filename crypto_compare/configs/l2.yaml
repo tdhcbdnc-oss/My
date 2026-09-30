@@ -17,9 +17,11 @@ sources:
   lookback_days: 182
   unlock_horizon_days: 182
   revenue_type: dailyFees
+  opendevdata:
+    metric: exclusive_devs    # exclusive_devs | all_devs | full_time_devs (см. README)
   artemis:
     dau_avg_days: 7
-    dev_metric: null
+    dev_metric: null          # платная метрика разработчиков Artemis; обычно не нужна
 
 ecosystems:
   - name: Arbitrum
@@ -28,6 +30,7 @@ ecosystems:
     defillama_chain: Arbitrum
     defillama_fees: arbitrum
     artemis_id: arbitrum
+    opendevdata: Arbitrum
     tokenomist_id: arbitrum
   - name: Optimism
     category: L2
@@ -35,18 +38,21 @@ ecosystems:
     defillama_chain: OP Mainnet
     defillama_fees: op-mainnet
     artemis_id: optimism
+    opendevdata: Optimism
     tokenomist_id: optimism
   - name: Base
     category: L2
     defillama_chain: Base
     defillama_fees: base
     artemis_id: base
+    opendevdata: Base
   - name: Mantle
     category: L2
     coingecko_id: mantle
     defillama_chain: Mantle
     defillama_fees: mantle
     artemis_id: mantle
+    opendevdata: Mantle
     tokenomist_id: mantle
   - name: Starknet
     category: L2
@@ -54,6 +60,7 @@ ecosystems:
     defillama_chain: Starknet
     defillama_fees: starknet
     artemis_id: starknet
+    opendevdata: Starknet
     tokenomist_id: starknet
   - name: ZKsync
     category: L2
@@ -61,6 +68,7 @@ ecosystems:
     defillama_chain: ZKsync Era
     defillama_fees: zksync-era
     artemis_id: zksync
+    opendevdata: zkSync
     tokenomist_id: zksync
   - name: Linea
     category: L2
@@ -68,6 +76,7 @@ ecosystems:
     defillama_chain: Linea
     defillama_fees: linea
     artemis_id: linea
+    opendevdata: Linea
     tokenomist_id: linea
   - name: Scroll
     category: L2
@@ -75,4 +84,5 @@ ecosystems:
     defillama_chain: Scroll
     defillama_fees: scroll
     artemis_id: scroll
+    opendevdata: Scroll
     tokenomist_id: scroll

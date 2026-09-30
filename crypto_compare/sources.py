@@ -8,9 +8,11 @@ from __future__ import annotations
 
 import logging
 import os
+import shutil
 import time
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
+from pathlib import Path
 from statistics import median
 
 import requests
@@ -227,6 +229,89 @@ def artemis(http: Http, ecos: list[dict], today: date, lookback_days: int, cfg: 
             if pts and (name := by_id.get(aid)):
                 d, v = max(pts)
                 out.setdefault(name, {})["devs"] = Value(v, "Artemis", f"{dev_metric} на {d}")
+    return out
+
+
+# --------------------------------------------------------------------------- Open Dev Data
+
+ODD_BASE = "https://data.opendevdata.org"
+ODD_ATTRIBUTION = "Source: Open Dev Data (opendevdata.org), CC BY 4.0"
+
+
+def _odd_file(http: Http, manifest: dict, name: str, cache_dir: Path) -> Path:
+    """Скачивает parquet-файл снимка один раз; старые версии в кэше удаляет."""
+    version = manifest["dataset"]["version"]
+    res = next(r for r in manifest["dataset"]["resources"] if r["path"].endswith(f"/{name}"))
+    dest = cache_dir / version / name
+    if dest.exists() and dest.stat().st_size == res["size_bytes"]:
+        return dest
+    for old in cache_dir.glob("*"):
+        if old.is_dir() and old.name != version:
+            shutil.rmtree(old)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    log.info("Open Dev Data: скачиваю %s (%.0f МБ, версия %s)", name, res["size_bytes"] / 1e6, version)
+    tmp = dest.with_suffix(".part")
+    with http.s.get(ODD_BASE + res["path"], stream=True, timeout=TIMEOUT) as r:
+        r.raise_for_status()
+        with open(tmp, "wb") as f:
+            for chunk in r.iter_content(1 << 20):
+                f.write(chunk)
+    tmp.rename(dest)
+    return dest
+
+
+def opendevdata(http: Http, ecos: list[dict], today: date, lookback_days: int, cfg: dict,
+                cache_dir: Path) -> dict:
+    """Активные разработчики за 28 дней (Monthly Active Developers, Electric Capital).
+
+    metric: exclusive_devs — пишут только под эту сеть (по умолчанию; честнее для EVM,
+    где общие инструменты засчитываются всем сетям сразу), all_devs — все, включая
+    мультичейн, full_time_devs — работающие на постоянной основе.
+    """
+    wanted = {e["name"]: e["opendevdata"] for e in ecos if e.get("opendevdata")}
+    if not wanted:
+        return {}
+    import pyarrow.parquet as pq  # тяжёлая зависимость — только когда нужна
+
+    metric = cfg.get("metric", "exclusive_devs")
+    manifest = http.get_json(f"{ODD_BASE}/manifest.json")
+
+    catalog = pq.read_table(_odd_file(http, manifest, "ecosystems.parquet", cache_dir),
+                            columns=["id", "name", "is_chain"]).to_pylist()
+    by_name: dict[str, list[dict]] = {}
+    for row in catalog:
+        by_name.setdefault(row["name"].lower(), []).append(row)
+    ids = {}
+    for name, ref in wanted.items():
+        if isinstance(ref, int):
+            ids[name] = ref
+        elif rows := by_name.get(str(ref).lower()):
+            ids[name] = max(rows, key=lambda r: r["is_chain"])["id"]  # сеть важнее одноимённого проекта
+        else:
+            log.warning("Open Dev Data: экосистема '%s' (%s) не найдена", ref, name)
+
+    old_day = today - timedelta(days=lookback_days)
+    table = pq.read_table(_odd_file(http, manifest, "eco_mads.parquet", cache_dir),
+                          columns=["ecosystem_id", "day", metric],
+                          filters=[("ecosystem_id", "in", list(ids.values())),
+                                   ("day", ">=", old_day - timedelta(days=10))])
+    series: dict[int, list[tuple[date, float]]] = {}
+    for r in table.to_pylist():
+        series.setdefault(r["ecosystem_id"], []).append((r["day"], r[metric]))
+
+    out = {}
+    for name, eid in ids.items():
+        pts = series.get(eid)
+        if not pts:
+            log.warning("Open Dev Data: нет данных по %s (id %s)", name, eid)
+            continue
+        d, v = max(pts)
+        note = f"{metric} за 28 дн до {d}. {ODD_ATTRIBUTION}"
+        old = _closest(pts, old_day)
+        if old and old[1] and v and not 0.2 <= v / old[1] <= 5:
+            note += (f". ⚠ за 6 мес {old[1]:,.0f} → {v:,.0f}: скачок больше чем в 5 раз, часто это "
+                     "перепривязка общих репозиториев к сети, а не реальный приток разработчиков")
+        out[name] = {"devs": Value(v, "Open Dev Data", note)}
     return out
 
 

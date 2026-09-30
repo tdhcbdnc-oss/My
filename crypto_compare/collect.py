@@ -62,6 +62,9 @@ def collect(cfg: dict, today: date) -> dict[str, dict[str, Value]]:
         ("CoinGecko", lambda: sources.coingecko(http, ecos)),
         ("DeFiLlama TVL", lambda: sources.defillama_tvl(http, ecos, today, lookback)),
         ("DeFiLlama fees", lambda: sources.defillama_fees(http, ecos, s.get("revenue_type", "dailyFees"))),
+        ("Open Dev Data", lambda: sources.opendevdata(http, ecos, today, lookback, s.get("opendevdata", {}),
+                                                      HERE / ".cache" / "opendevdata")),
+        # Artemis после Open Dev Data: если задан платный dev_metric, его цифра перекроет
         ("Artemis", lambda: sources.artemis(http, ecos, today, lookback, s.get("artemis", {}))),
     ]
     for label, fn in steps:
