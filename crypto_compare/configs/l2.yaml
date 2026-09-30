@@ -1,0 +1,78 @@
+# Сравнение L2 на Ethereum. Base не имеет токена — в балл попадёт только по сетевым метрикам.
+title: Сравнение L2-экосистем
+output: output/l2_comparison.xlsx
+template: templates/crypto_ecosystems_comparison.xlsx
+
+weights:
+  tvl_growth: 15
+  addr_growth: 15
+  mcap_tvl: 10
+  mcap_rev: 15
+  devs: 15
+  unlock_6m: 10
+  fdv_mcap: 10
+  investors: 10
+
+sources:
+  lookback_days: 182
+  unlock_horizon_days: 182
+  revenue_type: dailyFees
+  artemis:
+    dau_avg_days: 7
+    dev_metric: null
+
+ecosystems:
+  - name: Arbitrum
+    category: L2
+    coingecko_id: arbitrum
+    defillama_chain: Arbitrum
+    defillama_fees: arbitrum
+    artemis_id: arbitrum
+    tokenomist_id: arbitrum
+  - name: Optimism
+    category: L2
+    coingecko_id: optimism
+    defillama_chain: OP Mainnet
+    defillama_fees: op-mainnet
+    artemis_id: optimism
+    tokenomist_id: optimism
+  - name: Base
+    category: L2
+    defillama_chain: Base
+    defillama_fees: base
+    artemis_id: base
+  - name: Mantle
+    category: L2
+    coingecko_id: mantle
+    defillama_chain: Mantle
+    defillama_fees: mantle
+    artemis_id: mantle
+    tokenomist_id: mantle
+  - name: Starknet
+    category: L2
+    coingecko_id: starknet
+    defillama_chain: Starknet
+    defillama_fees: starknet
+    artemis_id: starknet
+    tokenomist_id: starknet
+  - name: ZKsync
+    category: L2
+    coingecko_id: zksync
+    defillama_chain: ZKsync Era
+    defillama_fees: zksync-era
+    artemis_id: zksync
+    tokenomist_id: zksync
+  - name: Linea
+    category: L2
+    coingecko_id: linea
+    defillama_chain: Linea
+    defillama_fees: linea
+    artemis_id: linea
+    tokenomist_id: linea
+  - name: Scroll
+    category: L2
+    coingecko_id: scroll
+    defillama_chain: Scroll
+    defillama_fees: scroll
+    artemis_id: scroll
+    tokenomist_id: scroll
