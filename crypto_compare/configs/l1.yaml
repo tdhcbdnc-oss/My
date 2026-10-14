@@ -1,0 +1,126 @@
+# Сравнение L1-сетей. Сравнивай внутри одной категории — балл относительный.
+title: Сравнение L1-экосистем
+output: output/l1_comparison.xlsx
+template: templates/crypto_ecosystems_comparison.xlsx
+
+# Веса метрик (сумма не обязана быть 100: балл делится на сумму весов заполненных метрик).
+weights:
+  tvl_growth: 15    # рост TVL за 6 мес, больше = лучше
+  addr_growth: 15   # рост активных адресов за 6 мес, больше = лучше
+  mcap_tvl: 10      # Mcap / TVL, меньше = лучше
+  mcap_rev: 15      # Mcap / доход, меньше = лучше
+  devs: 15          # активных разработчиков, больше = лучше
+  unlock_6m: 10     # разлок за 6 мес, меньше = лучше
+  fdv_mcap: 10      # FDV / Mcap, меньше = лучше
+  investors: 10     # инвесторы и команда 1–5, больше = лучше
+
+sources:
+  lookback_days: 182          # «6 месяцев назад»
+  unlock_horizon_days: 182    # горизонт разлока
+  revenue_type: dailyFees     # dailyFees = все комиссии сети; dailyRevenue = то, что остаётся протоколу/холдерам
+  opendevdata:
+    metric: exclusive_devs    # exclusive_devs | all_devs | full_time_devs (см. README)
+  artemis:
+    dau_avg_days: 7           # активные адреса сглаживаются средним за N дней
+    dev_metric: null          # платная метрика разработчиков Artemis (есть только у ETH); обычно не нужна
+
+# Идентификаторы в источниках:
+#   coingecko_id     — id монеты в CoinGecko (из URL coingecko.com/en/coins/<id>)
+#   defillama_chain  — имя сети на defillama.com/chains (для TVL)
+#   defillama_fees   — slug в DeFiLlama Fees (defillama.com/fees)
+#   artemis_id       — id сети в Artemis
+#   opendevdata      — имя экосистемы в Open Dev Data (opendevdata.org) или её числовой id
+#   tokenomist_id    — slug токена в Tokenomist (нужен TOKENOMIST_API_KEY)
+# manual — ручные значения; перекрывают API. Ключи: mcap, fdv, tvl_now, tvl_6m, addr_now,
+#   addr_6m, revenue_1y ($ млн), devs, unlock_6m (доля: 0.03 = 3%), investors (1–5).
+ecosystems:
+  - name: Ethereum
+    category: L1
+    coingecko_id: ethereum
+    defillama_chain: Ethereum
+    defillama_fees: ethereum
+    artemis_id: ethereum
+    opendevdata: Ethereum
+    tokenomist_id: ethereum
+    manual: {}
+  - name: Solana
+    category: L1
+    coingecko_id: solana
+    defillama_chain: Solana
+    defillama_fees: solana
+    artemis_id: solana
+    opendevdata: Solana
+    tokenomist_id: solana
+    manual: {}
+  - name: Sui
+    category: L1
+    coingecko_id: sui
+    defillama_chain: Sui
+    defillama_fees: sui
+    artemis_id: sui
+    opendevdata: Sui
+    tokenomist_id: sui
+    manual: {}
+  - name: Aptos
+    category: L1
+    coingecko_id: aptos
+    defillama_chain: Aptos
+    defillama_fees: aptos
+    artemis_id: aptos
+    opendevdata: Aptos
+    tokenomist_id: aptos
+    manual: {}
+  - name: Avalanche
+    category: L1
+    coingecko_id: avalanche-2
+    defillama_chain: Avalanche
+    defillama_fees: avalanche
+    artemis_id: avalanche
+    opendevdata: Avalanche
+    tokenomist_id: avalanche
+    manual: {}
+  - name: Near
+    category: L1
+    coingecko_id: near
+    defillama_chain: Near
+    defillama_fees: near
+    artemis_id: near
+    opendevdata: NEAR
+    tokenomist_id: near-protocol
+    manual: {}
+  - name: TON
+    category: L1
+    coingecko_id: the-open-network
+    defillama_chain: TON
+    defillama_fees: ton
+    artemis_id: ton
+    opendevdata: 10625   # id: в каталоге два «TON»-подобных имени
+    tokenomist_id: toncoin
+    manual: {}
+  - name: Tron
+    category: L1
+    coingecko_id: tron
+    defillama_chain: Tron
+    defillama_fees: tron
+    artemis_id: tron
+    opendevdata: Tron
+    tokenomist_id: tron
+    manual: {}
+  - name: Hyperliquid
+    category: L1
+    coingecko_id: hyperliquid
+    defillama_chain: Hyperliquid L1
+    defillama_fees: hyperliquid   # комиссии всего Hyperliquid (перпы + HyperEVM); только HyperEVM — hyperliquid-l1
+    artemis_id: hyperliquid
+    opendevdata: Hyperliquid
+    tokenomist_id: hyperliquid
+    manual: {}
+  - name: Monad
+    category: L1
+    coingecko_id: monad
+    defillama_chain: Monad
+    defillama_fees: monad
+    artemis_id: monad
+    opendevdata: Monad
+    tokenomist_id: monad
+    manual: {}
